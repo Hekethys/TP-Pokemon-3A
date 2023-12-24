@@ -194,19 +194,15 @@ public class TurnManager {
         }
         
     
-        System.out.println("\nChoisissez une attaque:");
-        for (int i = 0; i < attacks.size(); i++) {
-            System.out.println((i + 1) + ". " + attacks.get(i).getName() + "  (" + attacks.get(i).getType() + ") -> " + attacks.get(i).getMaxUses() + " PP");
-        }
-    
         int attackChoice = -1;
         while (attackChoice < 0 || attackChoice >= attacks.size()) {
             try {
+                System.out.println("\nChoisissez une attaque:");
+                for (int i = 0; i < attacks.size(); i++) {
+                    System.out.println((i + 1) + ". " + attacks.get(i).getName());
+                }
                 System.out.print("Entrez le numéro de l'attaque: ");
                 attackChoice = Integer.parseInt(scanner.nextLine()) - 1;
-                if (attackChoice < 0 || attackChoice >= attacks.size()) {
-                    System.out.println("Choix invalide. Veuillez choisir un numéro valide.");
-                }
             } catch (NumberFormatException e) {
                 System.out.println("Entrée invalide. Veuillez entrer un nombre.");
             }
@@ -238,11 +234,12 @@ public class TurnManager {
         int itemChoice = -1;
         while (itemChoice < 0 || itemChoice >= items.size()) {
             try {
+                System.out.println("Choisissez un objet:");
+                for (int i = 0; i < items.size(); i++) {
+                    System.out.println((i + 1) + ". " + items.get(i).getName());
+                }
                 System.out.print("Entrez le numéro de l'objet: ");
                 itemChoice = Integer.parseInt(scanner.nextLine()) - 1;
-                if (itemChoice < 0 || itemChoice >= items.size()) {
-                    System.out.println("Choix invalide. Veuillez choisir un numéro valide.");
-                }
             } catch (NumberFormatException e) {
                 System.out.println("Entrée invalide. Veuillez entrer un nombre.");
             }
@@ -285,13 +282,16 @@ public class TurnManager {
     }
 
     int pokemonChoice = -1;
-    while (!indexMap.containsKey(pokemonChoice)) {
+    while (pokemonChoice < 0 || pokemonChoice >= pokemons.size()) {
         try {
-            System.out.print("Entrez le numéro du Pokémon: ");
-            pokemonChoice = Integer.parseInt(scanner.nextLine());
-            if (!indexMap.containsKey(pokemonChoice)) {
-                System.out.println("Choix invalide. Veuillez choisir un numéro valide.");
+            System.out.println("Choisissez un Pokémon:");
+            for (int i = 0; i < pokemons.size(); i++) {
+                if (pokemons.get(i).isAlive() && !pokemons.get(i).equals(player.getActivePokemon())) {
+                    System.out.println((i + 1) + ". " + pokemons.get(i).getName());
+                }
             }
+            System.out.print("Entrez le numéro du Pokémon: ");
+            pokemonChoice = Integer.parseInt(scanner.nextLine()) - 1;
         } catch (NumberFormatException e) {
             System.out.println("Entrée invalide. Veuillez entrer un nombre.");
         }
@@ -319,26 +319,26 @@ public class TurnManager {
     
 
     private int getActionChoice(Player player) {
-    System.out.println("\n" + player.getName() + ", choisissez une action:");
-    System.out.println("1. Attaquer");
-    System.out.println("2. Utiliser un objet");
-    System.out.println("3. Changer de Pokémon");
-
-    int action = -1;
-    while (action < 1 || action > 3) {
-        try {
-            System.out.print("Entrez le numéro de votre choix: ");
-            action = Integer.parseInt(scanner.nextLine());
-            if (action < 1 || action > 3) {
-                System.out.println("Choix invalide. Veuillez choisir un numéro entre 1 et 3.");
+        int action = -1;
+        while (action < 1 || action > 3) {
+            try {
+                System.out.println("\n" + player.getName() + ", choisissez une action:");
+                System.out.println("1. Attaquer");
+                System.out.println("2. Utiliser un objet");
+                System.out.println("3. Changer de Pokémon");
+                System.out.print("Entrez le numéro de votre choix: ");
+                action = Integer.parseInt(scanner.nextLine());
+    
+                if (action < 1 || action > 3) {
+                    System.out.println("Choix invalide. Veuillez choisir un numéro entre 1 et 3.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Entrée invalide. Veuillez entrer un nombre.");
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Entrée invalide. Veuillez entrer un nombre.");
         }
+        return action;
     }
-    return action;
-}
-
+    
 private void applyItemEffect(Item item, Player player, Pokemon targetPokemon) {
     
     if (item instanceof Medicine && ((Medicine) item).getEffect().equals("CureFlood")) {
