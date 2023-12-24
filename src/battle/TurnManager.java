@@ -199,7 +199,7 @@ public class TurnManager {
             try {
                 System.out.println("\nChoisissez une attaque:");
                 for (int i = 0; i < attacks.size(); i++) {
-                    System.out.println((i + 1) + ". " + attacks.get(i).getName() + " Type : " + attacks.get(i).getType() + " PP : " + attacks.get(i).getMaxUses() + "/" + attacks.get(i).getMaxUses());
+                    System.out.println((i + 1) + ". " + attacks.get(i).getName() + " (Type : " + attacks.get(i).getType() + ") (PP : " + attacks.get(i).getUsesLeft() + "/" + attacks.get(i).getMaxUses()+")");
                 }
                 System.out.print("Entrez le numéro de l'attaque: ");
                 attackChoice = Integer.parseInt(scanner.nextLine()) - 1;
@@ -368,7 +368,7 @@ private void executePlayerAction(Player player, Pokemon attackingPokemon, Pokemo
                 selectedAttack = null;
             }else{
                  selectedAttack = attackingPokemon.getAttacks().get(attackChoice);
-                if (selectedAttack.getMaxUses() <= 0) {
+                if (selectedAttack.getUsesLeft() <= 0) {
                     System.out.println(player.getName() + "vous n'avez plus de PP pour cette attaque. (" + selectedAttack.getName() + ")");
                     return;
                 }

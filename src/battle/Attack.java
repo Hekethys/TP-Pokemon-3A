@@ -6,12 +6,14 @@ public class Attack {
     private int power;
     private int maxUses;
     private double failRate;
+    private int usesLeft;
 
     public Attack(String name, String type, int power, int maxUses, double failRate) {
         this.name = name;
         this.type = type;
         this.power = power;
         this.maxUses = maxUses;
+        this.usesLeft = maxUses;
         this.failRate = failRate;
     }
 
@@ -36,9 +38,11 @@ public class Attack {
     }
 
     public void decreaseMaxUses() {
-        this.maxUses -=1;
+        this.usesLeft -=1;
     }
-
+    public int getUsesLeft() {
+        return this.usesLeft;
+    }
     public int getMaxUses() {
         return this.maxUses;
     }
