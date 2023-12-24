@@ -29,3 +29,6 @@ Fin du Jeu: Le jeu se termine lorsqu'un des joueurs n'a plus de Pokémon en éta
 # Bon à Savoir
 Le jeu est conçu pour être intuitif et facile à comprendre, même pour ceux qui ne sont pas familiers avec l'univers Pokémon.
 Prenez le temps de comprendre les forces et faiblesses de chaque type de Pokémon pour élaborer des stratégies efficaces.
+
+# Personnalisation
+Vous pouvez si vous le souhaitez rajouter des attaques, des pokémons ou encore des items en modifiant les fichiers .txt stockés dans lib et en gardant le même format :)
