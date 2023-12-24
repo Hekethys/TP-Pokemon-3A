@@ -1,0 +1,272 @@
+Attack
+    Name        Aqua Jet
+    Type        Water
+    Power       40
+    NbUse       3
+    Fail        0.05
+EndAttack
+
+Attack
+    Name        Flamethrower
+    Type        Fire
+    Power       90
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Thunderbolt
+    Type        Electric
+    Power       90
+    NbUse       3
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Insect Buzz
+    Type        Insect 
+    Power       75
+    NbUse       3
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        Solar Beam
+    Type        Plant
+    Power       120
+    NbUse       3
+    Fail        0.15
+EndAttack
+
+Attack
+    Name        Earthquake
+    Type        Ground
+    Power       100
+    NbUse       3
+    Fail        0.05
+EndAttack
+
+Attack
+    Name        Tackle
+    Type        Normal
+    Power       40
+    NbUse       20
+    Fail        0.1
+EndAttack
+
+
+Attack
+    Name        Hydro Pump
+    Type        Water
+    Power       110
+    NbUse       2
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        Fire Blast
+    Type        Fire
+    Power       110
+    NbUse       3
+    Fail        0.15
+EndAttack
+
+Attack
+    Name        Thunder
+    Type        Electric
+    Power       110
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Bubble Beam
+    Type        Water
+    Power       65
+    NbUse       3
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Fire Spin
+    Type        Fire
+    Power       35
+    NbUse       20
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        Spark
+    Type        Electric
+    Power       65
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Bug Bite
+    Type        Insect
+    Power       60
+    NbUse       5
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Vine Whip
+    Type        Plant
+    Power       45
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Dig
+    Type        Ground
+    Power       80
+    NbUse       3
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Scratch
+    Type        Normal
+    Power       40
+    NbUse       30
+    Fail        0.15
+EndAttack
+
+Attack
+    Name        Pound
+    Type        Normal
+    Power       50
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Surf
+    Type        Water
+    Power       90
+    NbUse       12
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Flame Wheel
+    Type        Fire
+    Power       60
+    NbUse       3
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        Shock Wave
+    Type        Electric
+    Power       60
+    NbUse       3
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Bug Buzz
+    Type        Insect
+    Power       90
+    NbUse       5
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Razor Leaf
+    Type        Plant
+    Power       55
+    NbUse       20
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Sand Tomb
+    Type        Ground
+    Power       35
+    NbUse       20
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        Hyper Fang
+    Type        Normal
+    Power       80
+    NbUse       3
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Waterfall
+    Type        Water
+    Power       80
+    NbUse       10
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Fire Punch
+    Type        Fire
+    Power       75
+    NbUse       12
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Thunder Punch
+    Type        Electric
+    Power       75
+    NbUse       12
+    Fail        0.12
+EndAttack
+
+Attack
+    Name        X-Scissor
+    Type        Insect
+    Power       80
+    NbUse       4
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Seed Bomb
+    Type        Plant
+    Power       80
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Earth Power
+    Type        Ground
+    Power       90
+    NbUse       3
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Body Slam
+    Type        Normal
+    Power       85
+    NbUse       12
+    Fail        0.1
+EndAttack
+
+Attack
+    Name        Water Pulse
+    Type        Water
+    Power       60
+    NbUse       40
+    Fail        0.08
+EndAttack
+
+Attack
+    Name        Flamethrower
+    Type        Fire
+    Power       90
+    NbUse       3
+    Fail        0.1
+EndAttack

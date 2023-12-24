@@ -1,0 +1,297 @@
+Monster
+    Name        Pikachu
+    Type        Electric
+    HP          110 141
+    Speed       110 141
+    Attack      75 106
+    Defense     50 82
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Cerapuca
+    Type        Water
+    HP          119 150
+    Attack      68 99
+    Speed       63 94
+    Defense     85 116
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Charizard
+    Type        Fire
+    HP          115 146
+    Speed       100 131
+    Attack      84 115
+    Defense     78 109
+    Blaze       0.3
+EndMonster
+
+Monster
+    Name        Blastoise
+    Type        Water
+    HP          122 153
+    Speed       78 109
+    Attack      83 114
+    Defense     100 131
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Venusaur
+    Type        Plant
+    HP          126 157
+    Speed       80 111
+    Attack      82 113
+    Defense     83 114
+    Heal        0.3
+EndMonster
+
+Monster
+    Name        Jolteon
+    Type        Electric
+    HP          105 136
+    Speed       130 161
+    Attack      65 96
+    Defense     60 91
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Scyther
+    Type        Insect
+    HP          70 101
+    Speed       105 136
+    Attack      110 141
+    Defense     80 111
+    Poison      0.5
+EndMonster
+
+Monster
+    Name        Garchomp
+    Type        Ground
+    HP          108 139
+    Speed       102 133
+    Attack      130 161
+    Defense     95 126
+    Hide        0.2
+EndMonster
+
+Monster
+    Name        Raichu
+    Type        Electric
+    HP          100 131
+    Speed       110 141
+    Attack      90 121
+    Defense     55 86
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Bulbasaur
+    Type        Plant
+    HP          105 136
+    Speed       70 101
+    Attack      65 96
+    Defense     70 101
+    Heal        0.3
+EndMonster
+
+Monster
+    Name        Squirtle
+    Type        Water
+    HP          110 141
+    Speed       60 91
+    Attack      63 94
+    Defense     80 111
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Vaporeon
+    Type        Water
+    HP          130 161
+    Speed       65 96
+    Attack      60 91
+    Defense     95 126
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Arcanine
+    Type        Fire
+    HP          120 151
+    Speed       95 126
+    Attack      110 141
+    Defense     80 111
+    Blaze       0.3
+EndMonster
+
+Monster
+    Name        Exeggutor
+    Type        Plant
+    HP          130 161
+    Speed       55 86
+    Attack      95 126
+    Defense     85 116
+    Heal        0.3
+EndMonster
+
+Monster
+    Name        Electabuzz
+    Type        Electric
+    HP          105 136
+    Speed       105 136
+    Attack      83 114
+    Defense     57 88
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Pinsir
+    Type        Insect
+    HP          110 141
+    Speed       85 116
+    Attack      125 156
+    Defense     100 131
+    Poison      0.1
+EndMonster
+
+Monster
+    Name        Gyarados
+    Type        Water
+    HP          130 161
+    Speed       81 112
+    Attack      125 156
+    Defense     79 110
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Ninetales
+    Type        Fire
+    HP          110 141
+    Speed       81 112
+    Attack      76 107
+    Defense     75 106
+    Blaze       0.3
+EndMonster
+
+Monster
+    Name        Sandslash
+    Type        Ground
+    HP          95 126
+    Speed       70 101
+    Attack      100 131
+    Defense     110 141
+    Hide        0.2
+EndMonster
+
+Monster
+    Name        Ampharos
+    Type        Electric
+    HP          125 156
+    Speed       55 86
+    Attack      75 106
+    Defense     85 116
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Typhlosion
+    Type        Fire
+    HP          115 146
+    Speed       100 131
+    Attack      84 115
+    Defense     78 109
+    Blaze       0.3
+EndMonster
+
+Monster
+    Name        Swampert
+    Type        Water
+    HP          120 151
+    Speed       60 91
+    Attack      85 116
+    Defense     90 121
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Galvantula
+    Type        Electric
+    HP          70 101
+    Speed       108 139
+    Attack      77 108
+    Defense     60 91
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Sceptile
+    Type        Plant
+    HP          110 141
+    Speed       120 151
+    Attack      85 116
+    Defense     65 96
+    Heal        0.3
+EndMonster
+
+Monster
+    Name        Infernape
+    Type        Fire
+    HP          108 139
+    Speed       108 139
+    Attack      104 135
+    Defense     71 102
+    Blaze       0.3
+EndMonster
+
+Monster
+    Name        Lanturn
+    Type        Water
+    HP          125 156
+    Speed       67 98
+    Attack      58 89
+    Defense     76 107
+    Flood       0.25
+    Fall        0.35
+EndMonster
+
+Monster
+    Name        Vikavolt
+    Type        Electric
+    HP          77 108
+    Speed       43 74
+    Attack      77 108
+    Defense     95 126
+    Paralysis   0.2
+EndMonster
+
+Monster
+    Name        Torterra
+    Type        Plant
+    HP          140 171
+    Speed       56 87
+    Attack      109 140
+    Defense     105 136
+    Heal        0.3
+EndMonster
+
+Monster
+    Name        Gastrodon
+    Type        Water
+    HP          122 153
+    Speed       39 70
+    Attack      83 114
+    Defense     92 123
+    Flood       0.25
+    Fall        0.35
+EndMonster

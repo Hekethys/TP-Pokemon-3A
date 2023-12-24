@@ -1,0 +1,58 @@
+Item
+Name Super Potion
+Type Potion
+Effect Heal
+Value 50
+EndItem
+
+Item
+Name Hyper Potion
+Type Potion
+Effect Heal
+Value 200
+EndItem
+
+Item
+Name Attack Boost
+Type Potion
+Effect IncreaseAttack
+Value 20
+EndItem
+
+Item
+Name Defense Boost
+Type Potion
+Effect IncreaseDefense
+Value 20
+EndItem
+
+Item
+Name Spid 
+Type Potion
+Effect IncreaseSpeed
+Value 20
+EndItem
+
+Item
+Name Antidote
+Type Medicine
+Effect CurePoison
+EndItem
+
+Item
+Name Relaxer
+Type Medicine
+Effect CureParalyzed 
+EndItem
+
+Item
+Name Burn Heal
+Type Medicine
+Effect CureBurn
+EndItem
+
+Item
+Name Sponge
+Type Medicine
+Effect CureFlood
+EndItem
