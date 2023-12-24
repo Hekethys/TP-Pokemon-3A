@@ -199,7 +199,7 @@ public class TurnManager {
             try {
                 System.out.println("\nChoisissez une attaque:");
                 for (int i = 0; i < attacks.size(); i++) {
-                    System.out.println((i + 1) + ". " + attacks.get(i).getName());
+                    System.out.println((i + 1) + ". " + attacks.get(i).getName() + " Type : " + attacks.get(i).getType() + " PP : " + attacks.get(i).getMaxUses() + "/" + attacks.get(i).getMaxUses());
                 }
                 System.out.print("Entrez le numéro de l'attaque: ");
                 attackChoice = Integer.parseInt(scanner.nextLine()) - 1;
@@ -234,10 +234,6 @@ public class TurnManager {
         int itemChoice = -1;
         while (itemChoice < 0 || itemChoice >= items.size()) {
             try {
-                System.out.println("Choisissez un objet:");
-                for (int i = 0; i < items.size(); i++) {
-                    System.out.println((i + 1) + ". " + items.get(i).getName());
-                }
                 System.out.print("Entrez le numéro de l'objet: ");
                 itemChoice = Integer.parseInt(scanner.nextLine()) - 1;
             } catch (NumberFormatException e) {
@@ -250,54 +246,51 @@ public class TurnManager {
 
     private int getPokemonChoice(Player player, Boolean item) {
         
-    List<Pokemon> pokemons = player.getPokemons();
-    Map<Integer, Integer> indexMap = new HashMap<>(); 
-    System.out.println("Choisissez un Pokémon:");
-
-    if (item){
-        
-        int displayIndex = 1;
-        for (int i = 0; i < pokemons.size(); i++) {
-            if (pokemons.get(i).isAlive()) {
-                System.out.println(displayIndex + ". " + pokemons.get(i).getName() + " Type : " + pokemons.get(i).getType() + " HP : " + pokemons.get(i).getHp() + "/" + pokemons.get(i).getMaxHp());
-                indexMap.put(displayIndex, i);
-                displayIndex++;
-            }
-        }
-
-    } else {
-
-        int displayIndex = 1;
-        for (int i = 0; i < pokemons.size(); i++) {
-            if (pokemons.get(i).isAlive() && !pokemons.get(i).equals(player.getActivePokemon())) {
-                System.out.println(displayIndex + ". " + pokemons.get(i).getName());
-                indexMap.put(displayIndex, i);
-                displayIndex++;
-            }
-        }
-    }
-    if (indexMap.isEmpty()) {
-        System.out.println("Aucun autre Pokémon disponible.");
-        return -1;
-    }
-
-    int pokemonChoice = -1;
-    while (pokemonChoice < 0 || pokemonChoice >= pokemons.size()) {
-        try {
-            System.out.println("Choisissez un Pokémon:");
+        List<Pokemon> pokemons = player.getPokemons();
+        Map<Integer, Integer> indexMap = new HashMap<>(); 
+        System.out.println("Choisissez un Pokémon:");
+    
+        if (item){
+            
+            int displayIndex = 1;
             for (int i = 0; i < pokemons.size(); i++) {
-                if (pokemons.get(i).isAlive() && !pokemons.get(i).equals(player.getActivePokemon())) {
-                    System.out.println((i + 1) + ". " + pokemons.get(i).getName());
+                if (pokemons.get(i).isAlive()) {
+                    System.out.println(displayIndex + ". " + pokemons.get(i).getName() + " Type : " + pokemons.get(i).getType() + " HP : " + pokemons.get(i).getHp() + "/" + pokemons.get(i).getMaxHp());
+                    indexMap.put(displayIndex, i);
+                    displayIndex++;
                 }
             }
-            System.out.print("Entrez le numéro du Pokémon: ");
-            pokemonChoice = Integer.parseInt(scanner.nextLine()) - 1;
-        } catch (NumberFormatException e) {
-            System.out.println("Entrée invalide. Veuillez entrer un nombre.");
+    
+        } else {
+    
+            int displayIndex = 1;
+            for (int i = 0; i < pokemons.size(); i++) {
+                if (pokemons.get(i).isAlive() && !pokemons.get(i).equals(player.getActivePokemon())) {
+                    System.out.println(displayIndex + ". " + pokemons.get(i).getName());
+                    indexMap.put(displayIndex, i);
+                    displayIndex++;
+                }
+            }
         }
+        if (indexMap.isEmpty()) {
+            System.out.println("Aucun autre Pokémon disponible.");
+            return -1;
+        }
+    
+        int pokemonChoice = -1;
+        while (!indexMap.containsKey(pokemonChoice)) {
+            try {
+                System.out.print("Entrez le numéro du Pokémon: ");
+                pokemonChoice = Integer.parseInt(scanner.nextLine());
+                if (!indexMap.containsKey(pokemonChoice)) {
+                    System.out.println("Choix invalide. Veuillez choisir un numéro valide.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Entrée invalide. Veuillez entrer un nombre.");
+            }
+        }
+        return indexMap.get(pokemonChoice); 
     }
-    return indexMap.get(pokemonChoice); 
-}
 
     private void useItem(Player player, int itemChoice, int pokemonChoice) {
         List<Pokemon> pokemons = player.getPokemons();
